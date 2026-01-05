@@ -1,0 +1,46 @@
+
+.game{
+  display: flex;
+}
+.game-board{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  
+}
+
+.square{
+  width: 64px;
+  height: 64px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+.square:hover{
+  transform: translateY(-2px);
+}
+
+.board-row{
+  display: flex;
+  gap: 3px;
+}
+
+.game-info ol{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+.game-info li button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.game-info li button:hover{
+  text-decoration: underline;
+}
