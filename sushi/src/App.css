@@ -24,6 +24,7 @@
 .contact p{
   font-size: 12px;
   color: #999999;
+  margin: 0;
 }
 .contact a{
   display: flex;
@@ -34,6 +35,7 @@
   line-height: 1px;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 .contact a:hover{
   text-decoration: underline;
@@ -136,10 +138,12 @@
   background-color: #ff0202;
   padding: 80px 0;
   margin-bottom: 40px;
+  
 }
 
 .why-us-container {
   max-width: 1200px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -154,6 +158,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+
 }
 
 .why-card {
@@ -178,12 +183,6 @@
   line-height: 1.6;
 }
 
-/* 📱 Адаптив */
-@media (max-width: 1024px) {
-  .why-us-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 
 /* Menu style */
@@ -203,17 +202,24 @@
   max-width: 300px;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-content{
+  padding: 16px;
+
 }
 .menu-card img{
   width: 100%;
   height: 250px;
   transition: 0.3s ease;
+  border-radius: 10px 10px 0 0;
 }
 .menu-card a{
   padding: 8px 24px;
+}
+.menu-card a:hover{
+  border: 2px solid #ff0202;
 }
 
 .menu-card:hover {
@@ -227,22 +233,29 @@
   margin-top: 10px;
   display: block;
   color: #000;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 
 /* About Us styles */
+.abt-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
 .abt-us-container{
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   gap: 30px;
-  margin-bottom: 40px;
-
+  max-width: 1200px;
+  padding: 0 16px;
 }
 
-.benefit-row {
+.abt-row {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -251,24 +264,24 @@
   align-items: center;
 }
 
-.benefit-img {
+.abt-img {
   width: 50%;
   border-radius: 24px;
 }
 
-.benefit-img img {
+.abt-img img {
   border-radius: 24px;
   width: 100%;
   /* height: 400px; */
 }
 
-.benefit-content {
+.abt-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
 }
-.benefit-content li {
+.abt-content li {
   margin-left: 30px;
 }
 
@@ -324,28 +337,52 @@
   color: #fff;
 }
 
-
-
+@media (max-width: 1024px) {
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 600px) {
+  .card{
+    height: auto;
+  }
   .header{
-    font-size: 16px;
+    font-size: 12px;
+  }
+  .contact{
+    margin-right: 5px;
+  }
+  .contact p{
+    font-size: 12px;
+  }
+  .contact a img{
+    width: 12px;
+  }
+  .info p{
+    font-size: 12px;
+  }
+  .header img{
+    width: 100px;
   }
 
   .card{
     align-items: center;
   }
   
-  .benefit-row{
+  .abt-row{
     flex-direction: column;
     gap: 0px;
     border-bottom: 1px solid #999999;
     padding-bottom: 30px;
   }
-  .benefit-img, .benefit-content {
+  .last{
+    border-bottom: none;
+  }
+  .abt-img, .abt-content {
     width: 100%;
   }
-  .benefit-img img{
+  .abt-img img{
     max-width: 100%;
   }
   .footer-container {

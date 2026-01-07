@@ -4,13 +4,14 @@ import Dining from "../assets/dining.png"
 
 const AboutUs = () => {
     return(
-        <div className="abt-us-container">
+        <div className="abt-us">
+            <div className="abt-us-container">
             <h1>About Us</h1>
-            <div class="benefit-row">
-                <div class="benefit-img">
+            <div class="abt-row">
+                <div class="abt-img">
                     <img src={Restaurant} alt="img" />
                  </div>
-                <div class="benefit-content">
+                <div class="abt-content">
                     <h3>Our Philosophy</h3>
                     <p>
                         At Sushi House, sushi is more than just food – it’s an experience. Each roll is carefully prepared to combine tradition, creativity, and authentic Japanese flavors. <br />
@@ -24,8 +25,8 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
-            <div class="benefit-row">
-                <div class="benefit-content">
+            <div class="abt-row">
+                <div class="abt-content">
                     <h3>Our Chefs & Fresh Ingredients</h3>
                     <p>
                         Our skilled chefs bring years of experience and passion to every dish. We ensure that each bite is perfectly balanced and delicious.
@@ -37,15 +38,15 @@ const AboutUs = () => {
                     <li>Creative rolls and seasonal specials</li>
                     </p>
                 </div>
-                <div class="benefit-img">
+                <div class="abt-img">
                     <img src={Chef} alt="img" />
                  </div>
             </div>
-            <div class="benefit-row">
-                <div class="benefit-img">
+            <div class="abt-row last">
+                <div class="abt-img">
                     <img src={Dining} alt="img" />
                  </div>
-                <div class="benefit-content">
+                <div class="abt-content">
                     <h3>Dining & Delivery Experience</h3>
                     <p>
                         Whether you dine in or order online, we provide a pleasant and seamless experience.
@@ -57,6 +58,7 @@ const AboutUs = () => {
                     <li>Consistent quality in every order</li>
                     </p>
                 </div>
+            </div>
             </div>
         </div>
         
